@@ -3,11 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/VI/ProfCARLOS--JAVA/VeterinariaMascotaB/src/java/managedbean/MascotaBean.java</file>
-            <file>file:/F:/VI/ProfCARLOS--JAVA/VeterinariaMascotaB/web/welcomePrimefaces.xhtml</file>
-            <file>file:/F:/VI/ProfCARLOS--JAVA/VeterinariaMascotaB/web/RegistroMascota.xhtml</file>
-            <file>file:/F:/VI/ProfCARLOS--JAVA/VeterinariaMascotaB/src/java/hibernate.reveng.xml</file>
-            <file>file:/F:/VI/ProfCARLOS--JAVA/VeterinariaMascotaB/src/java/entidades/Mascota.hbm.xml</file>
+            <file>file:/F:/VI/Prof%20JUAN%20CARLOS--JAVA/VeterinariaMascotaB/src/java/dao/MascotaDao.java</file>
+            <file>file:/F:/VI/Prof%20JUAN%20CARLOS--JAVA/VeterinariaMascotaB/web/RegistroMascota.xhtml</file>
         </group>
     </open-files>
 </project-private>

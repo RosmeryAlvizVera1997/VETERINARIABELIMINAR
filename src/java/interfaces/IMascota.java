@@ -11,7 +11,7 @@ public interface IMascota {
     public abstract void guardarMascota(Mascota mascota);
 
     //listar todas
-    public abstract ArrayList<Mascota> listarMascotas(Session sesion);
+    public abstract ArrayList<Mascota> listarMascotas();
 
     //actualizar
     public abstract void actualizarMascota(Mascota mascota);
@@ -24,4 +24,6 @@ public interface IMascota {
 
     //contar registro
     public Integer ContadorDeMascota(Session session);
+    //eliminar
+     public abstract boolean eliminarMascota(Mascota mascota);
 }

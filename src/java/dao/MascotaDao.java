@@ -25,7 +25,8 @@ public class MascotaDao implements IMascota {
 
     //listar todas
     @Override
-    public ArrayList<Mascota> listarMascotas(Session sesion) {
+    public ArrayList<Mascota> listarMascotas() {
+        Session sesion = HibernateUtil.getSessionFactory().openSession();
         ArrayList<Mascota> milista = new ArrayList<>();
         //Crear la consulta hacia la base de datos
         Query query = sesion.createQuery("FROM Mascota");
@@ -64,6 +65,7 @@ public class MascotaDao implements IMascota {
         transaccion.commit();
         sesion.close();
     }
+   
 
 //contar registro
     @Override
@@ -75,4 +77,18 @@ public class MascotaDao implements IMascota {
         return cont;
     }
 
+    @Override
+ public boolean eliminarMascota(Mascota mascota) {
+         boolean respuesta = true;
+        Session sesion = HibernateUtil.getSessionFactory().openSession();
+        Transaction transaccion = sesion.beginTransaction();
+        try {
+            sesion.delete(mascota);
+            transaccion.commit();
+        } catch (Exception e) {
+            respuesta = false;
+        }
+        sesion.close();
+        return respuesta;
+    }
 }
